@@ -12,6 +12,7 @@ from folium.plugins import MarkerCluster
 st.set_page_config(page_title="Aplicacion CM",page_icon="🦁")
 st.title('Aplicacion CM-HOUSE')
 
+st.sidebar.write('**Datos de king country, USA **:')
 st.write('**Datos de king country, USA **:')
 data=pd.read_csv('Carlosdata.csv')
 latt, longg = data['lat'].mean(), data['long'].mean()
