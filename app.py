@@ -10,9 +10,9 @@ from streamlit_folium import folium_static
 from folium.plugins import MarkerCluster
 
 st.set_page_config(page_title="Aplicacion CM",page_icon="🦁")
-st.title('Aplicacion de prueba')
+st.title('Aplicacion CM-HOUSE')
 
-st.write('**Datos de king country, USA (20xx a 20xx)**:')
+st.write('**Datos de king country, USA **:')
 data=pd.read_csv('Carlosdata.csv')
 latt, longg = data['lat'].mean(), data['long'].mean()
 st.dataframe(data)
