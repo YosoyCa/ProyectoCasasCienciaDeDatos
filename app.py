@@ -3,7 +3,7 @@ import folium
 import numpy as np
 import pandas as pd
 import streamlit as st
-
+from PIL import Image
 import seaborn as sns
 import matplotlib.pyplot as plt 
 from streamlit_folium import folium_static
@@ -14,6 +14,8 @@ st.title('Aplicacion CM-HOUSE')
 
 st.sidebar.write('Nuestra App tiene en cuenta tu ritmo de vida y tus necesidades para ofrecerte infromacion puntual con base a tus necesidades de vivienda :')
 st.sidebar.write('**Datos de king country, USAsdfasfasfasfadf qwgwre 	werq werfqwef	 wef we fwe werwefwefwew we  **:')
+imagen = Image.open("unnamed.png")
+st.sidebar.image(imagen)
 st.write('**Datos de king country, USA **:')
 data=pd.read_csv('Carlosdata.csv')
 latt, longg = data['lat'].mean(), data['long'].mean()
