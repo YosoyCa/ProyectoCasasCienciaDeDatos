@@ -221,9 +221,8 @@ with col1:
         plt.style.use('dark_background')
         fig = plt.figure(figsize=(7,7)) # try different values
         fig = sns.boxplot(x='bedrooms',y='price',data=data,showfliers=False)
-        fig.set_xlabel("Año de Construcción", fontsize = 17)
+        fig.set_xlabel("Cantidad de Habitaciones", fontsize = 17)
         fig.set_ylabel("Precio (Millones de Dólares)", fontsize = 17)
-        fig.legend(title='Tipo de propiedad', loc='upper right', labels=['Apartamento', 'Casa','Estudio'])
         fig = fig.figure
         st.pyplot(fig)
         
@@ -233,8 +232,7 @@ with col2:
         plt.style.use('dark_background')
         fig = plt.figure(figsize=(7,7)) # try different values
         fig = sns.boxplot(x='bathrooms',y='price',data=data,showfliers=False)
-        fig.set_xlabel("Año de Construcción", fontsize = 17)
+        fig.set_xlabel("Cantidad de Baños", fontsize = 17)
         fig.set_ylabel("Precio (Millones de Dólares)", fontsize = 17)
-        fig.legend(title='Tipo de propiedad', loc='upper right', labels=['Apartamento', 'Casa','Estudio'])
         fig = fig.figure
         st.pyplot(fig)
