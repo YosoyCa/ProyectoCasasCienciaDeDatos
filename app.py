@@ -10,9 +10,9 @@ from streamlit_folium import folium_static
 from folium.plugins import MarkerCluster
 
 st.set_page_config(page_title="Aplicacion CM",page_icon="🦁")
-st.title('Aplicacion CM-HOUSE')
+st.title('CM-HOUSE')
 
-st.sidebar.write('Nuestra App tiene en cuenta tu ritmo de vida y tus necesidades para ofrecerte infromacion puntual con base a tus necesidades de vivienda :')
+st.sidebar.write('Nuestra App tiene en cuenta tu ritmo de vida y tus necesidades para ofrecerte infromacion puntual de vivienda :')
 
 imagen = Image.open("unnamed.png")
 st.sidebar.image(imagen)
