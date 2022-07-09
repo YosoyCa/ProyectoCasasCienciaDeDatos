@@ -3,3 +3,5 @@ folium
 streamlit-folium
 plotly
 seaborn
+scikit-learn
+pickle
