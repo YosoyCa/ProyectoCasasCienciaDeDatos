@@ -1,7 +1,11 @@
-streamlit
+joblib
 folium
-streamlit-folium
-plotly
+matplotlib
+streamlit
+pandas
 seaborn
-scikit-learn
-pickle
+numpy
+plotly
+streamlit_folium
+scikit-learn==1.1.1
+xgboost==1.6.1
